@@ -18,7 +18,7 @@ The shoji "theme" is actually a pair of themes.
 
 ## installation
 
-If you don’t have a preferred plugin helper, consider trying **vim-plug**, which can be installed with:
+If you don’t have a preferred plugin helper, consider trying [vim-plug](https://github.com/junegunn/vim-plug), which can be installed with:
 
 ```
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
@@ -42,7 +42,7 @@ To activate a shoji theme, add one of the following to your vimrc:
 - `colorscheme shoji_niji`
 - `colorscheme shoji_shiro`
 
-To easily toggle between the two shoji themes, add a keybinding to your vimrc, such as:
+To easily toggle between the two shoji themes, add a keybinding to your vimrc, such as...
 
 ```
 noremap <silent> <C-s> : if g:colors_name == "shoji_niji" <bar>
@@ -51,3 +51,5 @@ noremap <silent> <C-s> : if g:colors_name == "shoji_niji" <bar>
                        \ colorscheme shoji_niji           <bar>
                        \ endif                            <return>
 ```
+
+...changing `<C-s>` (which denotes the keystroke [ctrl+s]) to suit your preference.
