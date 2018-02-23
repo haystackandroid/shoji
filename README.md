@@ -30,4 +30,17 @@ shoji consists of two themes:
 - the exuberant `shoji_niji`, which underlays code with a rainbow of colorful paper rectangles
 - the restrained `shoji_shiro`, which is content with a minimal practical set of paper rectangles
 
-To activate, add `colorscheme shoji_niji` or `colorscheme shoji_shiro` to your vimrc.
+To activate a shoji theme, add one of the following to your vimrc:
+
+- `colorscheme shoji_niji`
+- `colorscheme shoji_shiro`
+
+If you'd like to toggle between the two shoji themes, you could define a keybinding like:
+
+```
+noremap <silent> <C-s> : if g:colors_name == "shoji_niji" <bar>
+                       \ colorscheme shoji_shiro          <bar>
+                       \ else                             <bar>
+                       \ colorscheme shoji_niji           <bar>
+                       \ endif                            <return>
+```
