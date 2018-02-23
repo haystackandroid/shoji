@@ -1,0 +1,141 @@
+# vim: ft=colortemplate fdm=marker ts=8
+
+# information
+Full name:       shoji_shiro
+Short name:      shoji_shiro
+Author:          nightsense
+Maintainer:      nightsense
+Terminal Colors: 256
+License:         MIT
+
+# background
+Background: light
+
+# palette
+Color: white    #fafafa   ~
+Color: black    #363636   ~
+Color: grey     #e4e4e4   ~
+Color: red      #f5aca4   ~
+Color: orange   #fac8a8   ~
+Color: yellow   #ffda40   ~
+Color: green    #bde0b1   ~
+Color: aqua     #bee6de   ~
+Color: blue     #bedbf0   ~
+Color: purple   #dfcfeb   ~
+Color: pink     #facfd4   ~
+
+# normal text
+Boolean            black   white
+Character          black   white
+Conditional        black   white
+Constant           black   white
+CursorLineNr       black   white
+Debug              black   white
+Define             black   white
+Delimiter          black   white
+EndOfBuffer        black   white
+Exception          black   white
+Float              black   white
+Function           black   white
+Identifier         black   white
+Ignore             black   white
+Include            black   white
+Keyword            black   white
+Label              black   white
+LineNr             black   white
+Macro              black   white
+ModeMsg            black   white
+MoreMsg            black   white
+NonText            black   white
+Normal             black   white
+Number             black   white
+Operator           black   white
+Pmenu              black   white
+PmenuSbar          black   white
+PreCondit          black   white
+PreProc            black   white
+Question           black   white
+Repeat             black   white
+Special            black   white
+SpecialChar        black   white
+SpecialComment     black   white
+SpecialKey         black   white
+Statement          black   white
+StorageClass       black   white
+String             black   white
+Structure          black   white
+TabLine            black   white
+TabLineFill        black   white
+Tag                black   white
+Terminal           black   white
+Type               black   white
+Typedef            black   white
+
+# bold text
+Bold               black   none    bold
+Directory          black   none    bold
+Title              black   none    bold
+WildMenu           black   white   bold
+
+# undercurled text
+SpellBad           none    none    undercurl    s=black
+SpellCap           none    none    undercurl    s=black
+SpellLocal         none    none    undercurl    s=black
+SpellRare          none    none    undercurl    s=black
+
+# reversed text
+Cursor             white   black
+FoldColumn         white   black
+Folded             white   black
+IncSearch          white   black
+PmenuSel           white   black
+PmenuThumb         white   black
+SignColumn         white   black
+TermCursor         white   black
+TermCursorNC       white   black
+ToolbarButton      white   black
+ToolbarLine        white   black
+VertSplit          white   black
+Visual             white   black
+VisualNOS          white   black
+
+# reversed bold text
+StatusLine         white   black   bold
+StatusLineNC       white   black   bold
+StatusLineTerm     white   black   bold
+StatusLineTermNC   white   black   bold
+TabLineSel         white   black   bold
+
+# other styled text
+Conceal            none    none
+Italic             black   white   italic
+Underlined         black   white   underline
+
+# grey blocks (comments, navigation lines)
+ColorColumn        black   grey
+Comment            black   grey
+CursorColumn       black   grey
+CursorLine         black   grey
+DiffChange         black   grey
+QuickFixLine       black   grey
+
+# red blocks (errors/warnings, removals)
+DiffDelete         black   red
+DiffRemoved        black   red
+Error              black   red
+ErrorMsg           black   red
+TooLong            black   red
+WarningMsg         black   red
+
+# orange blocks (changes)
+DiffChanged        black   orange
+DiffText           black   orange
+
+# yellow blocks (highlighted matches)
+MatchParen         black   yellow
+Search             black   yellow
+Todo               black   yellow
+
+# green blocks (additions)
+DiffAdd            black   green
+DiffAdded          black   green
