@@ -2,6 +2,8 @@
 
 A vim theme that underlays code with colorful "paper rectangles".
 
+Crafted with the magnificent [Colortemplate](https://github.com/lifepillar/vim-colortemplate).
+
 ## installation
 
 If you don’t have a preferred plugin helper, consider trying **vim-plug**, which can be installed with:
