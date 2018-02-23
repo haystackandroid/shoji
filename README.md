@@ -13,7 +13,7 @@ curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
   https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 ```
 
-shoji can be installed using vim-plug by adding the following to the top of your vimrc...
+With vim-plug, shoji can be installed by adding the following to the top of your vimrc...
 
 ```
 call plug#begin('~/.vim/plugged')
@@ -35,7 +35,7 @@ To activate a shoji theme, add one of the following to your vimrc:
 - `colorscheme shoji_niji`
 - `colorscheme shoji_shiro`
 
-If you'd like to toggle between the two shoji themes, you could define a keybinding like:
+To toggle between the two shoji themes, add a keybinding like:
 
 ```
 noremap <silent> <C-s> : if g:colors_name == "shoji_niji" <bar>
