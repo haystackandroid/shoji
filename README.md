@@ -37,15 +37,12 @@ call plug#end()
 
 ## activation
 
-shoji consists of two themes:
-
-
 To activate a shoji theme, add one of the following to your vimrc:
 
 - `colorscheme shoji_niji`
 - `colorscheme shoji_shiro`
 
-To toggle between the two shoji themes, add a keybinding like:
+To easily toggle between the two shoji themes, add a keybinding to your vimrc, such as:
 
 ```
 noremap <silent> <C-s> : if g:colors_name == "shoji_niji" <bar>
