@@ -1,8 +1,20 @@
 # shoji
 
-A vim theme that underlays code with colorful "paper rectangles".
+A vim theme that underlays code with colorful "paper rectangles" (block highlighting).
 
 Crafted with the magnificent [Colortemplate](https://github.com/lifepillar/vim-colortemplate).
+
+## variants
+
+The shoji "theme" is actually a pair of themes.
+
+**shoji_niji** is the exuberant one, papering the syntactic landscape in blocky rainbows.
+
+![screenshot of the shoji_niji vim theme](https://github.com/nightsense/shoji/raw/master/screenshots/shoji_niji.png)
+
+**shoji_shiro** is the restrained one, content with pristine black-and-white, reaching for color only when unavoidably practical.
+
+![screenshot of the shoji_shiro vim theme](https://github.com/nightsense/shoji/raw/master/screenshots/shoji_shiro.png)
 
 ## installation
 
@@ -27,8 +39,6 @@ call plug#end()
 
 shoji consists of two themes:
 
-- the exuberant `shoji_niji`, which underlays code with a rainbow of colorful paper rectangles
-- the restrained `shoji_shiro`, which is content with a minimal practical set of paper rectangles
 
 To activate a shoji theme, add one of the following to your vimrc:
 
