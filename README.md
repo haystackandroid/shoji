@@ -1,6 +1,8 @@
 # shoji
 
-A vim theme that conveys syntax with colorful highlighting (instead of colored text).
+A vim theme that conveys syntax with colorful highlighting (instead of colored text), as if each piece of code were underlayed with a paper rectangle.
+
+<img alt="a sort of logo for the shoji vim theme" src="https://github.com/nightsense/shoji/raw/master/images/shoji.png" height="156" />
 
 Crafted with the magnificent [Colortemplate](https://github.com/lifepillar/vim-colortemplate).
 
@@ -10,11 +12,11 @@ The shoji "theme" is actually a pair of themes.
 
 **shoji_niji** is the exuberant one, papering the syntactic landscape in blocky rainbows.
 
-<img alt="screenshot of the shoji_niji vim theme" src="https://github.com/nightsense/shoji/raw/master/screenshots/shoji_niji.png" height="216" />
+<img alt="screenshot of the shoji_niji vim theme" src="https://github.com/nightsense/shoji/raw/master/images/shoji_niji.png" height="216" />
 
 **shoji_shiro** is the restrained one, content with pristine black-and-white, except where color is unavoidably practical.
 
-<img alt="screenshot of the shoji_shiro vim theme" src="https://github.com/nightsense/shoji/raw/master/screenshots/shoji_shiro.png" height="216" />
+<img alt="screenshot of the shoji_shiro vim theme" src="https://github.com/nightsense/shoji/raw/master/images/shoji_shiro.png" height="216" />
 
 ## installation
 
