@@ -1,6 +1,6 @@
 # shoji
 
-A vim theme that underlays code with colorful "paper rectangles" (block highlighting).
+A vim theme that conveys syntax with colorful highlighting (instead of colored text).
 
 Crafted with the magnificent [Colortemplate](https://github.com/lifepillar/vim-colortemplate).
 
