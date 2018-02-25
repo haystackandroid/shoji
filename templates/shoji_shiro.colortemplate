@@ -19,10 +19,6 @@ Color: red      #f5aca4   ~
 Color: orange   #fac8a8   ~
 Color: yellow   #ffda40   ~
 Color: green    #bde0b1   ~
-Color: aqua     #bee6de   ~
-Color: blue     #bedbf0   ~
-Color: purple   #dfcfeb   ~
-Color: pink     #facfd4   ~
 
 # normal text
 Boolean            black   white

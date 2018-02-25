@@ -2,7 +2,7 @@
 " Author:       nightsense
 " Maintainer:   nightsense
 " License:      MIT
-" Last Updated: Fri 23 Feb 2018 06:47:14 AM EST
+" Last Updated: Sun 25 Feb 2018 01:14:17 PM EST
 
 if !(has('termguicolors') && &termguicolors) && !has('gui_running')
       \ && (!exists('&t_Co') || &t_Co < 256)
@@ -31,7 +31,6 @@ let g:colors_name = 'shoji_niji'
 " orange: GUI=#fac8a8/rgb(250,200,168)  Term=223 #ffd7af/rgb(255,215,175)  [delta=5.556495]
 " purple: GUI=#dfcfeb/rgb(223,207,235)  Term=189 #d7d7ff/rgb(215,215,255)  [delta=6.035896]
 "   blue: GUI=#bedbf0/rgb(190,219,240)  Term=153 #afd7ff/rgb(175,215,255)  [delta=6.439493]
-hi Normal ctermfg=237 ctermbg=231 guifg=#363636 guibg=#fafafa guisp=NONE cterm=NONE gui=NONE
 hi CursorLineNr ctermfg=237 ctermbg=231 guifg=#363636 guibg=#fafafa guisp=NONE cterm=NONE gui=NONE
 hi EndOfBuffer ctermfg=237 ctermbg=231 guifg=#363636 guibg=#fafafa guisp=NONE cterm=NONE gui=NONE
 hi Ignore ctermfg=237 ctermbg=231 guifg=#363636 guibg=#fafafa guisp=NONE cterm=NONE gui=NONE
@@ -39,6 +38,7 @@ hi LineNr ctermfg=237 ctermbg=231 guifg=#363636 guibg=#fafafa guisp=NONE cterm=N
 hi ModeMsg ctermfg=237 ctermbg=231 guifg=#363636 guibg=#fafafa guisp=NONE cterm=NONE gui=NONE
 hi MoreMsg ctermfg=237 ctermbg=231 guifg=#363636 guibg=#fafafa guisp=NONE cterm=NONE gui=NONE
 hi NonText ctermfg=237 ctermbg=231 guifg=#363636 guibg=#fafafa guisp=NONE cterm=NONE gui=NONE
+hi Normal ctermfg=237 ctermbg=231 guifg=#363636 guibg=#fafafa guisp=NONE cterm=NONE gui=NONE
 hi Pmenu ctermfg=237 ctermbg=231 guifg=#363636 guibg=#fafafa guisp=NONE cterm=NONE gui=NONE
 hi PmenuSbar ctermfg=237 ctermbg=231 guifg=#363636 guibg=#fafafa guisp=NONE cterm=NONE gui=NONE
 hi Question ctermfg=237 ctermbg=231 guifg=#363636 guibg=#fafafa guisp=NONE cterm=NONE gui=NONE
@@ -53,9 +53,6 @@ hi SpellBad ctermfg=NONE ctermbg=NONE guifg=NONE guibg=NONE guisp=#363636 cterm=
 hi SpellCap ctermfg=NONE ctermbg=NONE guifg=NONE guibg=NONE guisp=#363636 cterm=NONE,undercurl gui=NONE,undercurl
 hi SpellLocal ctermfg=NONE ctermbg=NONE guifg=NONE guibg=NONE guisp=#363636 cterm=NONE,undercurl gui=NONE,undercurl
 hi SpellRare ctermfg=NONE ctermbg=NONE guifg=NONE guibg=NONE guisp=#363636 cterm=NONE,undercurl gui=NONE,undercurl
-hi Conceal ctermfg=NONE ctermbg=NONE guifg=NONE guibg=NONE guisp=NONE cterm=NONE gui=NONE
-hi Italic ctermfg=237 ctermbg=231 guifg=#363636 guibg=#fafafa guisp=NONE cterm=NONE,italic gui=NONE,italic
-hi Underlined ctermfg=237 ctermbg=231 guifg=#363636 guibg=#fafafa guisp=NONE cterm=NONE,underline gui=NONE,underline
 hi Cursor ctermfg=231 ctermbg=237 guifg=#fafafa guibg=#363636 guisp=NONE cterm=NONE gui=NONE
 hi FoldColumn ctermfg=231 ctermbg=237 guifg=#fafafa guibg=#363636 guisp=NONE cterm=NONE gui=NONE
 hi Folded ctermfg=231 ctermbg=237 guifg=#fafafa guibg=#363636 guisp=NONE cterm=NONE gui=NONE
@@ -75,6 +72,9 @@ hi StatusLineNC ctermfg=231 ctermbg=237 guifg=#fafafa guibg=#363636 guisp=NONE c
 hi StatusLineTerm ctermfg=231 ctermbg=237 guifg=#fafafa guibg=#363636 guisp=NONE cterm=NONE,bold gui=NONE,bold
 hi StatusLineTermNC ctermfg=231 ctermbg=237 guifg=#fafafa guibg=#363636 guisp=NONE cterm=NONE,bold gui=NONE,bold
 hi TabLineSel ctermfg=231 ctermbg=237 guifg=#fafafa guibg=#363636 guisp=NONE cterm=NONE,bold gui=NONE,bold
+hi Conceal ctermfg=NONE ctermbg=NONE guifg=NONE guibg=NONE guisp=NONE cterm=NONE gui=NONE
+hi Italic ctermfg=237 ctermbg=231 guifg=#363636 guibg=#fafafa guisp=NONE cterm=NONE,italic gui=NONE,italic
+hi Underlined ctermfg=237 ctermbg=231 guifg=#363636 guibg=#fafafa guisp=NONE cterm=NONE,underline gui=NONE,underline
 hi ColorColumn ctermfg=237 ctermbg=254 guifg=#363636 guibg=#e4e4e4 guisp=NONE cterm=NONE gui=NONE
 hi Comment ctermfg=237 ctermbg=254 guifg=#363636 guibg=#e4e4e4 guisp=NONE cterm=NONE gui=NONE
 hi CursorColumn ctermfg=237 ctermbg=254 guifg=#363636 guibg=#e4e4e4 guisp=NONE cterm=NONE gui=NONE
@@ -139,7 +139,6 @@ finish
 " Color: blue     #bedbf0   ~
 " Color: purple   #dfcfeb   ~
 " Color: pink     #facfd4   ~
-" Normal             black   white
 " CursorLineNr       black   white
 " EndOfBuffer        black   white
 " Ignore             black   white
@@ -147,6 +146,7 @@ finish
 " ModeMsg            black   white
 " MoreMsg            black   white
 " NonText            black   white
+" Normal             black   white
 " Pmenu              black   white
 " PmenuSbar          black   white
 " Question           black   white
@@ -161,9 +161,6 @@ finish
 " SpellCap           none    none    undercurl    s=black
 " SpellLocal         none    none    undercurl    s=black
 " SpellRare          none    none    undercurl    s=black
-" Conceal            none    none
-" Italic             black   white   italic
-" Underlined         black   white   underline
 " Cursor             white   black
 " FoldColumn         white   black
 " Folded             white   black
@@ -183,6 +180,9 @@ finish
 " StatusLineTerm     white   black   bold
 " StatusLineTermNC   white   black   bold
 " TabLineSel         white   black   bold
+" Conceal            none    none
+" Italic             black   white   italic
+" Underlined         black   white   underline
 " ColorColumn        black   grey
 " Comment            black   grey
 " CursorColumn       black   grey

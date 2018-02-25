@@ -2,7 +2,7 @@
 " Author:       nightsense
 " Maintainer:   nightsense
 " License:      MIT
-" Last Updated: Fri 23 Feb 2018 06:58:59 AM EST
+" Last Updated: Sun 25 Feb 2018 01:39:57 PM EST
 
 if !(has('termguicolors') && &termguicolors) && !has('gui_running')
       \ && (!exists('&t_Co') || &t_Co < 256)
@@ -24,13 +24,9 @@ let g:colors_name = 'shoji_shiro'
 "  white: GUI=#fafafa/rgb(250,250,250)  Term=231 #ffffff/rgb(255,255,255)  [delta=0.996523]
 "  black: GUI=#363636/rgb( 54, 54, 54)  Term=237 #3a3a3a/rgb( 58, 58, 58)  [delta=1.297771]
 " yellow: GUI=#ffda40/rgb(255,218, 64)  Term=220 #ffd700/rgb(255,215,  0)  [delta=2.603208]
-"   pink: GUI=#facfd4/rgb(250,207,212)  Term=224 #ffd7d7/rgb(255,215,215)  [delta=2.673761]
 "  green: GUI=#bde0b1/rgb(189,224,177)  Term=151 #afd7af/rgb(175,215,175)  [delta=3.220112]
 "    red: GUI=#f5aca4/rgb(245,172,164)  Term=217 #ffafaf/rgb(255,175,175)  [delta=3.419469]
-"   aqua: GUI=#bee6de/rgb(190,230,222)  Term=152 #afd7d7/rgb(175,215,215)  [delta=4.608745]
 " orange: GUI=#fac8a8/rgb(250,200,168)  Term=223 #ffd7af/rgb(255,215,175)  [delta=5.556495]
-" purple: GUI=#dfcfeb/rgb(223,207,235)  Term=189 #d7d7ff/rgb(215,215,255)  [delta=6.035896]
-"   blue: GUI=#bedbf0/rgb(190,219,240)  Term=153 #afd7ff/rgb(175,215,255)  [delta=6.439493]
 hi Boolean ctermfg=237 ctermbg=231 guifg=#363636 guibg=#fafafa guisp=NONE cterm=NONE gui=NONE
 hi Character ctermfg=237 ctermbg=231 guifg=#363636 guibg=#fafafa guisp=NONE cterm=NONE gui=NONE
 hi Conditional ctermfg=237 ctermbg=231 guifg=#363636 guibg=#fafafa guisp=NONE cterm=NONE gui=NONE
@@ -84,9 +80,6 @@ hi SpellBad ctermfg=NONE ctermbg=NONE guifg=NONE guibg=NONE guisp=#363636 cterm=
 hi SpellCap ctermfg=NONE ctermbg=NONE guifg=NONE guibg=NONE guisp=#363636 cterm=NONE,undercurl gui=NONE,undercurl
 hi SpellLocal ctermfg=NONE ctermbg=NONE guifg=NONE guibg=NONE guisp=#363636 cterm=NONE,undercurl gui=NONE,undercurl
 hi SpellRare ctermfg=NONE ctermbg=NONE guifg=NONE guibg=NONE guisp=#363636 cterm=NONE,undercurl gui=NONE,undercurl
-hi Conceal ctermfg=NONE ctermbg=NONE guifg=NONE guibg=NONE guisp=NONE cterm=NONE gui=NONE
-hi Italic ctermfg=237 ctermbg=231 guifg=#363636 guibg=#fafafa guisp=NONE cterm=NONE,italic gui=NONE,italic
-hi Underlined ctermfg=237 ctermbg=231 guifg=#363636 guibg=#fafafa guisp=NONE cterm=NONE,underline gui=NONE,underline
 hi Cursor ctermfg=231 ctermbg=237 guifg=#fafafa guibg=#363636 guisp=NONE cterm=NONE gui=NONE
 hi FoldColumn ctermfg=231 ctermbg=237 guifg=#fafafa guibg=#363636 guisp=NONE cterm=NONE gui=NONE
 hi Folded ctermfg=231 ctermbg=237 guifg=#fafafa guibg=#363636 guisp=NONE cterm=NONE gui=NONE
@@ -106,6 +99,9 @@ hi StatusLineNC ctermfg=231 ctermbg=237 guifg=#fafafa guibg=#363636 guisp=NONE c
 hi StatusLineTerm ctermfg=231 ctermbg=237 guifg=#fafafa guibg=#363636 guisp=NONE cterm=NONE,bold gui=NONE,bold
 hi StatusLineTermNC ctermfg=231 ctermbg=237 guifg=#fafafa guibg=#363636 guisp=NONE cterm=NONE,bold gui=NONE,bold
 hi TabLineSel ctermfg=231 ctermbg=237 guifg=#fafafa guibg=#363636 guisp=NONE cterm=NONE,bold gui=NONE,bold
+hi Conceal ctermfg=NONE ctermbg=NONE guifg=NONE guibg=NONE guisp=NONE cterm=NONE gui=NONE
+hi Italic ctermfg=237 ctermbg=231 guifg=#363636 guibg=#fafafa guisp=NONE cterm=NONE,italic gui=NONE,italic
+hi Underlined ctermfg=237 ctermbg=231 guifg=#363636 guibg=#fafafa guisp=NONE cterm=NONE,underline gui=NONE,underline
 hi ColorColumn ctermfg=237 ctermbg=254 guifg=#363636 guibg=#e4e4e4 guisp=NONE cterm=NONE gui=NONE
 hi Comment ctermfg=237 ctermbg=254 guifg=#363636 guibg=#e4e4e4 guisp=NONE cterm=NONE gui=NONE
 hi CursorColumn ctermfg=237 ctermbg=254 guifg=#363636 guibg=#e4e4e4 guisp=NONE cterm=NONE gui=NONE
@@ -135,10 +131,6 @@ finish
 " Color: orange   #fac8a8   ~
 " Color: yellow   #ffda40   ~
 " Color: green    #bde0b1   ~
-" Color: aqua     #bee6de   ~
-" Color: blue     #bedbf0   ~
-" Color: purple   #dfcfeb   ~
-" Color: pink     #facfd4   ~
 " Boolean            black   white
 " Character          black   white
 " Conditional        black   white
@@ -192,9 +184,6 @@ finish
 " SpellCap           none    none    undercurl    s=black
 " SpellLocal         none    none    undercurl    s=black
 " SpellRare          none    none    undercurl    s=black
-" Conceal            none    none
-" Italic             black   white   italic
-" Underlined         black   white   underline
 " Cursor             white   black
 " FoldColumn         white   black
 " Folded             white   black
@@ -214,6 +203,9 @@ finish
 " StatusLineTerm     white   black   bold
 " StatusLineTermNC   white   black   bold
 " TabLineSel         white   black   bold
+" Conceal            none    none
+" Italic             black   white   italic
+" Underlined         black   white   underline
 " ColorColumn        black   grey
 " Comment            black   grey
 " CursorColumn       black   grey
