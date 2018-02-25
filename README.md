@@ -54,6 +54,27 @@ noremap <silent> <C-s> : if g:colors_name == "shoji_niji" <bar>
 
 ...changing `<C-s>` (which denotes the keystroke [ctrl+s]) to suit your preference.
 
+## urxvt cursor
+
+In order for everything to display properly in terminal vim, additional configuration may be required.The cursor in urxvt, for instance, does not respond to the cursor settings declared in a vim theme. This can be remedied with the following vimrc code:
+
+```
+if !has("gui_running")
+  autocmd InsertEnter * exe 'silent !echo -en "\033[6 q"'
+  autocmd InsertLeave * exe 'silent !echo -en "\033[2 q"'
+  autocmd VimEnter    * exe 'silent !echo -en "\e]12;\#363636\a"'
+  autocmd VimEnter    * exe 'silent !echo -en "\e]11;\#fafafa\a"'
+  autocmd VimLeave    * exe 'silent !echo -en "\e]12;\#d8dee9\a"'
+  autocmd VimLeave    * exe 'silent !echo -en "\e]11;\#2e3440\a"'
+endif
+```
+
+The condition `if !has("gui_running")` ensures that the inner code is only executed if vim is running in a terminal.
+
+The first two autocommands ensure that the cursor becomes a vertical line upon entering insert mode, then reverts to a block when leaving. The cursor shape is designated by the number following the square bracket: `6` for vertical line, `2` for block. The other possibilities are `1` (blinking block), `3` (blinking underscore), `4` (underscore), and `5` (blinking vertical line).
+
+The `VimEnter` commands set the cursor background and foreground to match shoji, while the `VimLeave` commands restore those values to the terminal theme (otherwise, the shoji settings would persist in the terminal after vim was closed). Thus, `#d8dee9` should be set to your terminal cursor color, and `#2e3440` to your terminal background color.
+
 ## language samples
 
 These samples (drawn from [Rosetta Code](https://rosettacode.org/wiki/Sorting_algorithms/Quicksort)) use vim's built-in syntax detection for each filetype.
