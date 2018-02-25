@@ -56,7 +56,7 @@ noremap <silent> <C-s> : if g:colors_name == "shoji_niji" <bar>
 
 ## urxvt cursor
 
-In order for everything to display properly in terminal vim, additional configuration may be required.The cursor in urxvt, for instance, does not respond to the cursor settings declared in a vim theme. This can be remedied with the following vimrc code:
+In order for everything to display properly in terminal vim, additional configuration may be required.The cursor in urxvt, for instance, does not respond to cursor settings in a vim theme. This can be remedied with the following vimrc code:
 
 ```
 if !has("gui_running")
@@ -71,7 +71,7 @@ endif
 
 The condition `if !has("gui_running")` ensures that the inner code is only executed if vim is running in a terminal.
 
-The first two autocommands ensure that the cursor becomes a vertical line upon entering insert mode, then reverts to a block when leaving. The cursor shape is designated by the number following the square bracket: `6` for vertical line, `2` for block. The other possibilities are `1` (blinking block), `3` (blinking underscore), `4` (underscore), and `5` (blinking vertical line).
+The first two autocommands ensure that the cursor becomes a vertical line upon entering insert mode, then reverts to a block upon leaving. The cursor shape is set by the number following the square bracket: `6` for vertical line, `2` for block. The other possibilities are `1` (blinking block), `3` (blinking underscore), `4` (underscore), and `5` (blinking vertical line).
 
 The `VimEnter` commands set the cursor background and foreground to match shoji, while the `VimLeave` commands restore those values to the terminal theme (otherwise, the shoji settings would persist in the terminal after vim was closed). Thus, `#d8dee9` should be set to your terminal cursor color, and `#2e3440` to your terminal background color.
 
