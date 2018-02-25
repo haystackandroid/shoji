@@ -1,4 +1,4 @@
-# shoji&ensp;<img alt="logo for the shoji vim theme" src="https://github.com/nightsense/shoji/raw/master/images/shoji.png" height="61" />
+# shoji&ensp;<img alt="logo for the shoji vim theme" src="https://github.com/nightsense/shoji/raw/master/images/shoji.svg" />
 
 A vim theme that conveys syntax with colorful background highlighting (instead of colored text).
 
