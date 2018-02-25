@@ -53,3 +53,29 @@ noremap <silent> <C-s> : if g:colors_name == "shoji_niji" <bar>
 ```
 
 ...changing `<C-s>` (which denotes the keystroke [ctrl+s]) to suit your preference.
+
+## language samples
+
+### clojure
+
+<img alt="screenshot of clojure code highlighted with the shoji_niji vim theme" src="https://github.com/nightsense/shoji/raw/master/images/sample-clojure.png" height="75" />
+
+### erlang
+
+<img alt="screenshot of erlang code highlighted with the shoji_niji vim theme" src="https://github.com/nightsense/shoji/raw/master/images/sample-erlang.png" height="75" />
+
+### lisp
+
+<img alt="screenshot of lisp code highlighted with the shoji_niji vim theme" src="https://github.com/nightsense/shoji/raw/master/images/sample-lisp.png" height="75" />
+
+### php
+
+<img alt="screenshot of php code highlighted with the shoji_niji vim theme" src="https://github.com/nightsense/shoji/raw/master/images/sample-php.png" height="75" />
+
+### r
+
+<img alt="screenshot of r code highlighted with the shoji_niji vim theme" src="https://github.com/nightsense/shoji/raw/master/images/sample-r.png" height="75" />
+
+### rust
+
+<img alt="screenshot of rust code highlighted with the shoji_niji vim theme" src="https://github.com/nightsense/shoji/raw/master/images/sample-rust.png" height="75" />
