@@ -8,7 +8,7 @@ Crafted with the magnificent [Colortemplate](https://github.com/lifepillar/vim-c
 
 The shoji "theme" is actually a pair of themes.
 
-**shoji_niji** is the exuberant one, papering the syntactic landscape in blocky rainbows.
+**shoji_niji** is the exuberant one, showering syntacic rainbows.
 
 <img alt="screenshot of the shoji_niji vim theme" src="https://github.com/nightsense/shoji/raw/master/images/shoji_niji.png" height="294" />
 
