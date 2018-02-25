@@ -10,11 +10,11 @@ The shoji "theme" is actually a pair of themes.
 
 **shoji_niji** is the exuberant one, papering the syntactic landscape in blocky rainbows.
 
-<img alt="screenshot of the shoji_niji vim theme" src="https://github.com/nightsense/shoji/raw/master/screenshots/shoji_niji.png" height="216" />
+<img alt="screenshot of the shoji_niji vim theme" src="https://github.com/nightsense/shoji/raw/master/screenshots/shoji_niji.png" height="573" />
 
 **shoji_shiro** is the restrained one, content with pristine black-and-white, except where color is unavoidably practical.
 
-<img alt="screenshot of the shoji_shiro vim theme" src="https://github.com/nightsense/shoji/raw/master/screenshots/shoji_shiro.png" height="216" />
+<img alt="screenshot of the shoji_shiro vim theme" src="https://github.com/nightsense/shoji/raw/master/screenshots/shoji_shiro.png" height="573" />
 
 ## installation
 
