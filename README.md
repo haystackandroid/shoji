@@ -56,6 +56,8 @@ noremap <silent> <C-s> : if g:colors_name == "shoji_niji" <bar>
 
 ## language samples
 
+These samples (drawn from [Rosetta Code](https://rosettacode.org/wiki/Sorting_algorithms/Quicksort)) use vim's built-in syntax detection for each filetype.
+
 ### clojure
 
 <img alt="screenshot of clojure code highlighted with the shoji_niji vim theme" src="https://github.com/nightsense/shoji/raw/master/images/sample-clojure.png" height="75" />
