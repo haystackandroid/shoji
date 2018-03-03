@@ -72,7 +72,7 @@ This sets the cursor to a vertical line for insert mode, underline for replace m
 
 ### color
 
-To set cursor color in (vte-compatible) terminal vim, wrap the `vim` command in a shell function. (For neovim, substitue `vim` with `nvim`.)
+To set cursor color in (vte-compatible) terminal vim, wrap the `vim` command in a shell function.
 
 For bash/zsh, add the following to ~/.bashrc or ~/.zshrc:
 
@@ -95,6 +95,8 @@ function vim
   printf "%b" "\033]11;#2e3440\007\033]12;#d8dee9\007"
 end
 ```
+
+For neovim, substitue `vim` with `nvim`.
 
 ## language samples
 
