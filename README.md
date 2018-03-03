@@ -58,7 +58,7 @@ noremap <silent> <C-s> : if g:colors_name == "shoji_niji" <bar>
 
 ### shape
 
-To set cursor shape in terminal vim, see the [vim tips wiki](http://vim.wikia.com/wiki/Change_cursor_shape_in_different_modes).
+To set mode-specific cursor shape in terminal vim, see the [vim tips wiki](http://vim.wikia.com/wiki/Change_cursor_shape_in_different_modes).
 
 For instance, to set cursor shape in vte-compatible terminals (like urxvt):
 
@@ -72,7 +72,7 @@ This sets the cursor to a vertical line for insert mode, underline for replace m
 
 ### color
 
-To set cursor color in terminal vim, wrap the `vim` command in a shell function. (For neovim, substitue `vim` with `nvim`.)
+To set cursor color in (vte-compatible) terminal vim, wrap the `vim` command in a shell function. (For neovim, substitue `vim` with `nvim`.)
 
 For bash/zsh, add the following to ~/.bashrc or ~/.zshrc:
 
