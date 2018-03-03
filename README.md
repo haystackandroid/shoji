@@ -42,7 +42,7 @@ To activate a shoji theme, add one of the following to your vimrc:
 - `colorscheme shoji_niji`
 - `colorscheme shoji_shiro`
 
-The included `ShojiToggle()` function makes it easy to add a keybinding to switch between the two shoji themes:
+A keybinding for the `ShojiToggle()` function can be used to switch between the two shoji themes:
 
 ```
 noremap <C-s> :call ShojiToggle()<return>
