@@ -54,9 +54,9 @@ Change `<C-s>` (which denotes the keystroke [ctrl+s]) to suit your preference.
 
 ### shape
 
-To set mode-specific cursor shape in terminal vim, see the [vim tips wiki](http://vim.wikia.com/wiki/Change_cursor_shape_in_different_modes).
+To set mode-specific cursor shapes in terminal vim, see the [vim tips wiki](http://vim.wikia.com/wiki/Change_cursor_shape_in_different_modes).
 
-For instance, to set cursor shape in vte-compatible terminals (like urxvt):
+For instance, to set cursor shapes in vte-compatible terminals (like urxvt):
 
 ```
 let &t_SI = "\<Esc>[6 q"
