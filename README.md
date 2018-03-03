@@ -74,7 +74,7 @@ This sets the cursor to a vertical line for insert mode, underline for replace m
 
 To set cursor color in (vte-compatible) terminal vim, wrap the `vim` command in a shell function.
 
-For bash/zsh, add the following to ~/.bashrc or ~/.zshrc:
+For bash/zsh, add the following to `~/.bashrc` or `~/.zshrc`:
 
 ```
 vim() {
@@ -85,7 +85,7 @@ vim() {
 }
 ```
 
-For fish, add the following to ~/.config/fish/config.fish:
+For fish, add the following to `~/.config/fish/config.fish`:
 
 ```
 function vim
