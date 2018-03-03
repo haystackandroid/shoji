@@ -96,7 +96,7 @@ function vim
 end
 ```
 
-For neovim, substitue `vim` with `nvim`.
+For neovim, substitute `vim` with `nvim`.
 
 ## language samples
 
