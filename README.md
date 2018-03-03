@@ -96,6 +96,8 @@ function vim
 end
 ```
 
+Replace `2e3440` and `d8dee9` with the background and foreground colors of your terminal theme.
+
 For neovim, substitute `vim` with `nvim`.
 
 ## language samples
