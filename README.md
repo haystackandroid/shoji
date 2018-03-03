@@ -54,26 +54,47 @@ noremap <silent> <C-s> : if g:colors_name == "shoji_niji" <bar>
 
 ...changing `<C-s>` (which denotes the keystroke [ctrl+s]) to suit your preference.
 
-## urxvt cursor
+## terminal cursor
 
-In order for everything to display properly in terminal vim, additional configuration may be required.The cursor in urxvt, for instance, does not respond to cursor settings in a vim theme. This can be remedied with the following vimrc code:
+### shape
+
+To set cursor shape in terminal vim, see the [vim tips wiki](http://vim.wikia.com/wiki/Change_cursor_shape_in_different_modes).
+
+For instance, to set cursor shape in vte-compatible terminals (like urxvt):
 
 ```
-if !has("gui_running")
-  autocmd InsertEnter * exe 'silent !echo -en "\033[6 q"'
-  autocmd InsertLeave * exe 'silent !echo -en "\033[2 q"'
-  autocmd VimEnter    * exe 'silent !echo -en "\e]12;\#363636\a"'
-  autocmd VimEnter    * exe 'silent !echo -en "\e]11;\#fafafa\a"'
-  autocmd VimLeave    * exe 'silent !echo -en "\e]12;\#d8dee9\a"'
-  autocmd VimLeave    * exe 'silent !echo -en "\e]11;\#2e3440\a"'
-endif
+let &t_SI = "\<Esc>[6 q"
+let &t_SR = "\<Esc>[4 q"
+let &t_EI = "\<Esc>[2 q"
 ```
 
-The condition `if !has("gui_running")` ensures that the inner code is only executed if vim is running in a terminal.
+This sets the cursor to a vertical line for insert mode, underline for replace mode, and block for normal mode.
 
-The first two autocommands tell the cursor to become a vertical line upon entering insert mode, then revert to a block upon leaving. The cursor shape is set by the number following the square bracket: `6` for vertical line, `2` for block. The other possibilities are `1` (blinking block), `3` (blinking underscore), `4` (underscore), and `5` (blinking vertical line).
+### color
 
-The `VimEnter` commands set the cursor background and foreground to match shoji, while the `VimLeave` commands restore those values to the terminal theme (otherwise, the shoji settings would persist in the terminal after vim was closed). Thus, `#d8dee9` should be set to your terminal cursor color, and `#2e3440` to your terminal background color.
+To set cursor color in terminal vim, wrap the `vim` command in a shell function. (For neovim, substitue `vim` with `nvim`.)
+
+For bash/zsh, add the following to ~/.bashrc or ~/.zshrc:
+
+```
+vim() {
+  printf "%b" "\033]11;#fafafa\007\033]12;#2a2a2a\007"
+  sh -c "vim $*"
+  clear
+  printf "%b" "\033]11;#2e3440\007\033]12;#d8dee9\007"
+}
+```
+
+For fish, add the following to ~/.config/fish/config.fish:
+
+```
+function vim
+  printf "%b" "\033]11;#fafafa\007\033]12;#2a2a2a\007"
+  sh -c "vim" $argv
+  clear
+  printf "%b" "\033]11;#2e3440\007\033]12;#d8dee9\007"
+end
+```
 
 ## language samples
 
