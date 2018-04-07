@@ -86,7 +86,7 @@ For fish, add the following to `~/.config/fish/config.fish`:
 ```
 function vim
   printf "%b" "\033]11;#fafafa\007\033]12;#2a2a2a\007"
-  sh -c "vim" $argv
+  sh -c "vim $argv"
   clear
   printf "%b" "\033]11;#2e3440\007\033]12;#d8dee9\007"
 end
