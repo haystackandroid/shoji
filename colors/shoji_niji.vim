@@ -2,7 +2,7 @@
 " Author:       nightsense
 " Maintainer:   nightsense
 " License:      MIT
-" Last Updated: Tue 24 Apr 2018 01:50:13 AM EDT
+" Last Updated: Sun 17 Jun 2018 09:45:28 AM EDT
 
 if !(has('termguicolors') && &termguicolors) && !has('gui_running')
       \ && (!exists('&t_Co') || &t_Co < 256)
@@ -47,12 +47,14 @@ hi TabLineFill ctermfg=235 ctermbg=231 guifg=#2a2a2a guibg=#fefefe guisp=NONE ct
 hi Terminal ctermfg=235 ctermbg=231 guifg=#2a2a2a guibg=#fefefe guisp=NONE cterm=NONE gui=NONE
 hi Bold ctermfg=235 ctermbg=NONE guifg=#2a2a2a guibg=NONE guisp=NONE cterm=NONE,bold gui=NONE,bold
 hi Directory ctermfg=235 ctermbg=NONE guifg=#2a2a2a guibg=NONE guisp=NONE cterm=NONE,bold gui=NONE,bold
+hi StatusLineNC ctermfg=235 ctermbg=NONE guifg=#2a2a2a guibg=NONE guisp=NONE cterm=NONE,bold gui=NONE,bold
+hi StatusLineTermNC ctermfg=235 ctermbg=NONE guifg=#2a2a2a guibg=NONE guisp=NONE cterm=NONE,bold gui=NONE,bold
 hi Title ctermfg=235 ctermbg=NONE guifg=#2a2a2a guibg=NONE guisp=NONE cterm=NONE,bold gui=NONE,bold
 hi WildMenu ctermfg=235 ctermbg=231 guifg=#2a2a2a guibg=#fefefe guisp=NONE cterm=NONE,bold gui=NONE,bold
-hi SpellBad ctermfg=NONE ctermbg=NONE guifg=NONE guibg=NONE guisp=#2a2a2a cterm=NONE,undercurl gui=NONE,undercurl
-hi SpellCap ctermfg=NONE ctermbg=NONE guifg=NONE guibg=NONE guisp=#2a2a2a cterm=NONE,undercurl gui=NONE,undercurl
-hi SpellLocal ctermfg=NONE ctermbg=NONE guifg=NONE guibg=NONE guisp=#2a2a2a cterm=NONE,undercurl gui=NONE,undercurl
-hi SpellRare ctermfg=NONE ctermbg=NONE guifg=NONE guibg=NONE guisp=#2a2a2a cterm=NONE,undercurl gui=NONE,undercurl
+hi SpellBad ctermfg=NONE ctermbg=NONE guifg=NONE guibg=NONE guisp=#f5aca4 cterm=NONE,undercurl gui=NONE,undercurl
+hi SpellCap ctermfg=NONE ctermbg=NONE guifg=NONE guibg=NONE guisp=#fac8a8 cterm=NONE,undercurl gui=NONE,undercurl
+hi SpellLocal ctermfg=NONE ctermbg=NONE guifg=NONE guibg=NONE guisp=#bee6de cterm=NONE,undercurl gui=NONE,undercurl
+hi SpellRare ctermfg=NONE ctermbg=NONE guifg=NONE guibg=NONE guisp=#dfcfeb cterm=NONE,undercurl gui=NONE,undercurl
 hi Cursor ctermfg=231 ctermbg=235 guifg=#fefefe guibg=#2a2a2a guisp=NONE cterm=NONE gui=NONE
 hi FoldColumn ctermfg=231 ctermbg=235 guifg=#fefefe guibg=#2a2a2a guisp=NONE cterm=NONE gui=NONE
 hi Folded ctermfg=231 ctermbg=235 guifg=#fefefe guibg=#2a2a2a guisp=NONE cterm=NONE gui=NONE
@@ -68,9 +70,7 @@ hi VertSplit ctermfg=231 ctermbg=235 guifg=#fefefe guibg=#2a2a2a guisp=NONE cter
 hi Visual ctermfg=231 ctermbg=235 guifg=#fefefe guibg=#2a2a2a guisp=NONE cterm=NONE gui=NONE
 hi VisualNOS ctermfg=231 ctermbg=235 guifg=#fefefe guibg=#2a2a2a guisp=NONE cterm=NONE gui=NONE
 hi StatusLine ctermfg=231 ctermbg=235 guifg=#fefefe guibg=#2a2a2a guisp=NONE cterm=NONE,bold gui=NONE,bold
-hi StatusLineNC ctermfg=231 ctermbg=235 guifg=#fefefe guibg=#2a2a2a guisp=NONE cterm=NONE,bold gui=NONE,bold
 hi StatusLineTerm ctermfg=231 ctermbg=235 guifg=#fefefe guibg=#2a2a2a guisp=NONE cterm=NONE,bold gui=NONE,bold
-hi StatusLineTermNC ctermfg=231 ctermbg=235 guifg=#fefefe guibg=#2a2a2a guisp=NONE cterm=NONE,bold gui=NONE,bold
 hi TabLineSel ctermfg=231 ctermbg=235 guifg=#fefefe guibg=#2a2a2a guisp=NONE cterm=NONE,bold gui=NONE,bold
 hi Conceal ctermfg=NONE ctermbg=NONE guifg=NONE guibg=NONE guisp=NONE cterm=NONE gui=NONE
 hi Italic ctermfg=235 ctermbg=231 guifg=#2a2a2a guibg=#fefefe guisp=NONE cterm=NONE,italic gui=NONE,italic
@@ -155,12 +155,14 @@ finish
 " Terminal           black   white
 " Bold               black   none    bold
 " Directory          black   none    bold
+" StatusLineNC       black   none    bold
+" StatusLineTermNC   black   none    bold
 " Title              black   none    bold
 " WildMenu           black   white   bold
-" SpellBad           none    none    undercurl    s=black
-" SpellCap           none    none    undercurl    s=black
-" SpellLocal         none    none    undercurl    s=black
-" SpellRare          none    none    undercurl    s=black
+" SpellBad           none    none    undercurl    s=red
+" SpellCap           none    none    undercurl    s=orange
+" SpellLocal         none    none    undercurl    s=aqua
+" SpellRare          none    none    undercurl    s=purple
 " Cursor             white   black
 " FoldColumn         white   black
 " Folded             white   black
@@ -176,9 +178,7 @@ finish
 " Visual             white   black
 " VisualNOS          white   black
 " StatusLine         white   black   bold
-" StatusLineNC       white   black   bold
 " StatusLineTerm     white   black   bold
-" StatusLineTermNC   white   black   bold
 " TabLineSel         white   black   bold
 " Conceal            none    none
 " Italic             black   white   italic

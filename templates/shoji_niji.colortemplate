@@ -1,5 +1,3 @@
-# vim: ft=colortemplate fdm=marker ts=8
-
 # information
 Full name:       shoji_niji
 Short name:      shoji_niji
@@ -43,14 +41,16 @@ Terminal           black   white
 # bold text
 Bold               black   none    bold
 Directory          black   none    bold
+StatusLineNC       black   none    bold
+StatusLineTermNC   black   none    bold
 Title              black   none    bold
 WildMenu           black   white   bold
 
 # undercurled text
-SpellBad           none    none    undercurl    s=black
-SpellCap           none    none    undercurl    s=black
-SpellLocal         none    none    undercurl    s=black
-SpellRare          none    none    undercurl    s=black
+SpellBad           none    none    undercurl    s=red
+SpellCap           none    none    undercurl    s=orange
+SpellLocal         none    none    undercurl    s=aqua
+SpellRare          none    none    undercurl    s=purple
 
 # reversed text
 Cursor             white   black
@@ -70,9 +70,7 @@ VisualNOS          white   black
 
 # reversed bold text
 StatusLine         white   black   bold
-StatusLineNC       white   black   bold
 StatusLineTerm     white   black   bold
-StatusLineTermNC   white   black   bold
 TabLineSel         white   black   bold
 
 # other styled text
