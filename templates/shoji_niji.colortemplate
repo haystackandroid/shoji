@@ -58,8 +58,8 @@ IncSearch          white   black
 PmenuSel           white   black
 PmenuThumb         white   black
 SignColumn         white   black
-StatusLineNC       white   black   bold
-StatusLineTermNC   white   black   bold
+StatusLineNC       white   black
+StatusLineTermNC   white   black
 TermCursor         white   black
 TermCursorNC       white   black
 ToolbarButton      white   black

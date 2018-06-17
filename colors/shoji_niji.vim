@@ -2,7 +2,7 @@
 " Author:       nightsense
 " Maintainer:   nightsense
 " License:      MIT
-" Last Updated: Sun 17 Jun 2018 09:57:01 AM EDT
+" Last Updated: Sun 17 Jun 2018 09:58:02 AM EDT
 
 if !(has('termguicolors') && &termguicolors) && !has('gui_running')
       \ && (!exists('&t_Co') || &t_Co < 256)
@@ -60,8 +60,8 @@ hi IncSearch ctermfg=231 ctermbg=235 guifg=#fefefe guibg=#2a2a2a guisp=NONE cter
 hi PmenuSel ctermfg=231 ctermbg=235 guifg=#fefefe guibg=#2a2a2a guisp=NONE cterm=NONE gui=NONE
 hi PmenuThumb ctermfg=231 ctermbg=235 guifg=#fefefe guibg=#2a2a2a guisp=NONE cterm=NONE gui=NONE
 hi SignColumn ctermfg=231 ctermbg=235 guifg=#fefefe guibg=#2a2a2a guisp=NONE cterm=NONE gui=NONE
-hi StatusLineNC ctermfg=231 ctermbg=235 guifg=#fefefe guibg=#2a2a2a guisp=NONE cterm=NONE,bold gui=NONE,bold
-hi StatusLineTermNC ctermfg=231 ctermbg=235 guifg=#fefefe guibg=#2a2a2a guisp=NONE cterm=NONE,bold gui=NONE,bold
+hi StatusLineNC ctermfg=231 ctermbg=235 guifg=#fefefe guibg=#2a2a2a guisp=NONE cterm=NONE gui=NONE
+hi StatusLineTermNC ctermfg=231 ctermbg=235 guifg=#fefefe guibg=#2a2a2a guisp=NONE cterm=NONE gui=NONE
 hi TermCursor ctermfg=231 ctermbg=235 guifg=#fefefe guibg=#2a2a2a guisp=NONE cterm=NONE gui=NONE
 hi TermCursorNC ctermfg=231 ctermbg=235 guifg=#fefefe guibg=#2a2a2a guisp=NONE cterm=NONE gui=NONE
 hi ToolbarButton ctermfg=231 ctermbg=235 guifg=#fefefe guibg=#2a2a2a guisp=NONE cterm=NONE gui=NONE
@@ -168,8 +168,8 @@ finish
 " PmenuSel           white   black
 " PmenuThumb         white   black
 " SignColumn         white   black
-" StatusLineNC       white   black   bold
-" StatusLineTermNC   white   black   bold
+" StatusLineNC       white   black
+" StatusLineTermNC   white   black
 " TermCursor         white   black
 " TermCursorNC       white   black
 " ToolbarButton      white   black
