@@ -2,7 +2,7 @@
 " Author:       nightsense
 " Maintainer:   nightsense
 " License:      MIT
-" Last Updated: Sun 17 Jun 2018 09:45:28 AM EDT
+" Last Updated: Sun 17 Jun 2018 09:57:01 AM EDT
 
 if !(has('termguicolors') && &termguicolors) && !has('gui_running')
       \ && (!exists('&t_Co') || &t_Co < 256)
@@ -47,8 +47,6 @@ hi TabLineFill ctermfg=235 ctermbg=231 guifg=#2a2a2a guibg=#fefefe guisp=NONE ct
 hi Terminal ctermfg=235 ctermbg=231 guifg=#2a2a2a guibg=#fefefe guisp=NONE cterm=NONE gui=NONE
 hi Bold ctermfg=235 ctermbg=NONE guifg=#2a2a2a guibg=NONE guisp=NONE cterm=NONE,bold gui=NONE,bold
 hi Directory ctermfg=235 ctermbg=NONE guifg=#2a2a2a guibg=NONE guisp=NONE cterm=NONE,bold gui=NONE,bold
-hi StatusLineNC ctermfg=235 ctermbg=NONE guifg=#2a2a2a guibg=NONE guisp=NONE cterm=NONE,bold gui=NONE,bold
-hi StatusLineTermNC ctermfg=235 ctermbg=NONE guifg=#2a2a2a guibg=NONE guisp=NONE cterm=NONE,bold gui=NONE,bold
 hi Title ctermfg=235 ctermbg=NONE guifg=#2a2a2a guibg=NONE guisp=NONE cterm=NONE,bold gui=NONE,bold
 hi WildMenu ctermfg=235 ctermbg=231 guifg=#2a2a2a guibg=#fefefe guisp=NONE cterm=NONE,bold gui=NONE,bold
 hi SpellBad ctermfg=NONE ctermbg=NONE guifg=NONE guibg=NONE guisp=#f5aca4 cterm=NONE,undercurl gui=NONE,undercurl
@@ -62,6 +60,8 @@ hi IncSearch ctermfg=231 ctermbg=235 guifg=#fefefe guibg=#2a2a2a guisp=NONE cter
 hi PmenuSel ctermfg=231 ctermbg=235 guifg=#fefefe guibg=#2a2a2a guisp=NONE cterm=NONE gui=NONE
 hi PmenuThumb ctermfg=231 ctermbg=235 guifg=#fefefe guibg=#2a2a2a guisp=NONE cterm=NONE gui=NONE
 hi SignColumn ctermfg=231 ctermbg=235 guifg=#fefefe guibg=#2a2a2a guisp=NONE cterm=NONE gui=NONE
+hi StatusLineNC ctermfg=231 ctermbg=235 guifg=#fefefe guibg=#2a2a2a guisp=NONE cterm=NONE,bold gui=NONE,bold
+hi StatusLineTermNC ctermfg=231 ctermbg=235 guifg=#fefefe guibg=#2a2a2a guisp=NONE cterm=NONE,bold gui=NONE,bold
 hi TermCursor ctermfg=231 ctermbg=235 guifg=#fefefe guibg=#2a2a2a guisp=NONE cterm=NONE gui=NONE
 hi TermCursorNC ctermfg=231 ctermbg=235 guifg=#fefefe guibg=#2a2a2a guisp=NONE cterm=NONE gui=NONE
 hi ToolbarButton ctermfg=231 ctermbg=235 guifg=#fefefe guibg=#2a2a2a guisp=NONE cterm=NONE gui=NONE
@@ -155,8 +155,6 @@ finish
 " Terminal           black   white
 " Bold               black   none    bold
 " Directory          black   none    bold
-" StatusLineNC       black   none    bold
-" StatusLineTermNC   black   none    bold
 " Title              black   none    bold
 " WildMenu           black   white   bold
 " SpellBad           none    none    undercurl    s=red
@@ -170,6 +168,8 @@ finish
 " PmenuSel           white   black
 " PmenuThumb         white   black
 " SignColumn         white   black
+" StatusLineNC       white   black   bold
+" StatusLineTermNC   white   black   bold
 " TermCursor         white   black
 " TermCursorNC       white   black
 " ToolbarButton      white   black

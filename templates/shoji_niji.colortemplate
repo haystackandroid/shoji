@@ -41,8 +41,6 @@ Terminal           black   white
 # bold text
 Bold               black   none    bold
 Directory          black   none    bold
-StatusLineNC       black   none    bold
-StatusLineTermNC   black   none    bold
 Title              black   none    bold
 WildMenu           black   white   bold
 
@@ -60,6 +58,8 @@ IncSearch          white   black
 PmenuSel           white   black
 PmenuThumb         white   black
 SignColumn         white   black
+StatusLineNC       white   black   bold
+StatusLineTermNC   white   black   bold
 TermCursor         white   black
 TermCursorNC       white   black
 ToolbarButton      white   black
