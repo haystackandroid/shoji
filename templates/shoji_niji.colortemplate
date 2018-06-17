@@ -45,10 +45,10 @@ Title              black   none    bold
 WildMenu           black   white   bold
 
 # undercurled text
-SpellBad           none    none    undercurl    s=red
-SpellCap           none    none    undercurl    s=orange
-SpellLocal         none    none    undercurl    s=aqua
-SpellRare          none    none    undercurl    s=purple
+SpellBad           none    none    undercurl    s=black
+SpellCap           none    none    undercurl    s=black
+SpellLocal         none    none    undercurl    s=black
+SpellRare          none    none    undercurl    s=black
 
 # reversed text
 Cursor             white   black

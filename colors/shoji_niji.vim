@@ -2,7 +2,7 @@
 " Author:       nightsense
 " Maintainer:   nightsense
 " License:      MIT
-" Last Updated: Sun 17 Jun 2018 09:58:02 AM EDT
+" Last Updated: Sun 17 Jun 2018 10:06:19 AM EDT
 
 if !(has('termguicolors') && &termguicolors) && !has('gui_running')
       \ && (!exists('&t_Co') || &t_Co < 256)
@@ -49,10 +49,10 @@ hi Bold ctermfg=235 ctermbg=NONE guifg=#2a2a2a guibg=NONE guisp=NONE cterm=NONE,
 hi Directory ctermfg=235 ctermbg=NONE guifg=#2a2a2a guibg=NONE guisp=NONE cterm=NONE,bold gui=NONE,bold
 hi Title ctermfg=235 ctermbg=NONE guifg=#2a2a2a guibg=NONE guisp=NONE cterm=NONE,bold gui=NONE,bold
 hi WildMenu ctermfg=235 ctermbg=231 guifg=#2a2a2a guibg=#fefefe guisp=NONE cterm=NONE,bold gui=NONE,bold
-hi SpellBad ctermfg=NONE ctermbg=NONE guifg=NONE guibg=NONE guisp=#f5aca4 cterm=NONE,undercurl gui=NONE,undercurl
-hi SpellCap ctermfg=NONE ctermbg=NONE guifg=NONE guibg=NONE guisp=#fac8a8 cterm=NONE,undercurl gui=NONE,undercurl
-hi SpellLocal ctermfg=NONE ctermbg=NONE guifg=NONE guibg=NONE guisp=#bee6de cterm=NONE,undercurl gui=NONE,undercurl
-hi SpellRare ctermfg=NONE ctermbg=NONE guifg=NONE guibg=NONE guisp=#dfcfeb cterm=NONE,undercurl gui=NONE,undercurl
+hi SpellBad ctermfg=NONE ctermbg=NONE guifg=NONE guibg=NONE guisp=#2a2a2a cterm=NONE,undercurl gui=NONE,undercurl
+hi SpellCap ctermfg=NONE ctermbg=NONE guifg=NONE guibg=NONE guisp=#2a2a2a cterm=NONE,undercurl gui=NONE,undercurl
+hi SpellLocal ctermfg=NONE ctermbg=NONE guifg=NONE guibg=NONE guisp=#2a2a2a cterm=NONE,undercurl gui=NONE,undercurl
+hi SpellRare ctermfg=NONE ctermbg=NONE guifg=NONE guibg=NONE guisp=#2a2a2a cterm=NONE,undercurl gui=NONE,undercurl
 hi Cursor ctermfg=231 ctermbg=235 guifg=#fefefe guibg=#2a2a2a guisp=NONE cterm=NONE gui=NONE
 hi FoldColumn ctermfg=231 ctermbg=235 guifg=#fefefe guibg=#2a2a2a guisp=NONE cterm=NONE gui=NONE
 hi Folded ctermfg=231 ctermbg=235 guifg=#fefefe guibg=#2a2a2a guisp=NONE cterm=NONE gui=NONE
@@ -157,10 +157,10 @@ finish
 " Directory          black   none    bold
 " Title              black   none    bold
 " WildMenu           black   white   bold
-" SpellBad           none    none    undercurl    s=red
-" SpellCap           none    none    undercurl    s=orange
-" SpellLocal         none    none    undercurl    s=aqua
-" SpellRare          none    none    undercurl    s=purple
+" SpellBad           none    none    undercurl    s=black
+" SpellCap           none    none    undercurl    s=black
+" SpellLocal         none    none    undercurl    s=black
+" SpellRare          none    none    undercurl    s=black
 " Cursor             white   black
 " FoldColumn         white   black
 " Folded             white   black
@@ -233,3 +233,4 @@ finish
 " Tag                black   purple
 " Function           black   pink
 " Identifier         black   pink
+"
