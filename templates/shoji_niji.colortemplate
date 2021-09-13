@@ -1,0 +1,147 @@
+# information
+Full name:       shoji_niji
+Short name:      shoji_niji
+Author:          haystackandroid
+Maintainer:      haystackandroid
+Terminal Colors: 256
+License:         MIT
+
+# background
+Background: light
+
+# palette
+Color: white    #fefefe   ~
+Color: black    #2a2a2a   ~
+Color: grey     #e4e4e4   ~
+Color: red      #f5aca4   ~
+Color: orange   #fac8a8   ~
+Color: yellow   #ffda40   ~
+Color: green    #bde0b1   ~
+Color: aqua     #bee6de   ~
+Color: blue     #bedbf0   ~
+Color: purple   #dfcfeb   ~
+Color: pink     #facfd4   ~
+
+# normal text
+CursorLineNr       black   white
+EndOfBuffer        black   white
+Ignore             black   white
+LineNr             black   white
+ModeMsg            black   white
+MoreMsg            black   white
+NonText            black   white
+Normal             black   white
+Pmenu              black   white
+PmenuSbar          black   white
+Question           black   white
+TabLine            black   white
+TabLineFill        black   white
+Terminal           black   white
+
+# bold text
+Bold               black   none    bold
+Directory          black   none    bold
+Title              black   none    bold
+WildMenu           black   white   bold
+
+# undercurled text
+SpellBad           none    none    undercurl    s=black
+SpellCap           none    none    undercurl    s=black
+SpellLocal         none    none    undercurl    s=black
+SpellRare          none    none    undercurl    s=black
+
+# reversed text
+Cursor             white   black
+FoldColumn         white   black
+Folded             white   black
+IncSearch          white   black
+PmenuSel           white   black
+PmenuThumb         white   black
+SignColumn         white   black
+StatusLineNC       white   black
+StatusLineTermNC   white   black
+TermCursor         white   black
+TermCursorNC       white   black
+ToolbarButton      white   black
+ToolbarLine        white   black
+VertSplit          white   black
+Visual             white   black
+VisualNOS          white   black
+
+# reversed bold text
+StatusLine         white   black   bold
+StatusLineTerm     white   black   bold
+TabLineSel         white   black   bold
+
+# other styled text
+Conceal            none    none
+Italic             black   white   italic
+Underlined         black   white   underline
+
+# grey blocks (comments, navigation lines)
+ColorColumn        black   grey
+Comment            black   grey
+CursorColumn       black   grey
+CursorLine         black   grey
+DiffChange         black   grey
+QuickFixLine       black   grey
+
+# red blocks (errors/warnings, removals)
+DiffDelete         black   red
+DiffRemoved        black   red
+Error              black   red
+ErrorMsg           black   red
+TooLong            black   red
+WarningMsg         black   red
+
+# orange blocks (preliminaries, changes)
+Define             black   orange
+DiffChanged        black   orange
+DiffText           black   orange
+Include            black   orange
+Macro              black   orange
+PreCondit          black   orange
+PreProc            black   orange
+
+# yellow blocks (highlighted matches)
+MatchParen         black   yellow
+Search             black   yellow
+Todo               black   yellow
+
+# green blocks (actions, additions)
+Conditional        black   green
+DiffAdd            black   green
+DiffAdded          black   green
+Exception          black   green
+Keyword            black   green
+Label              black   green
+Operator           black   green
+Repeat             black   green
+Statement          black   green
+
+# aqua blocks (types)
+StorageClass       black   aqua
+Structure          black   aqua
+Type               black   aqua
+Typedef            black   aqua
+
+# blue blocks (constants)
+Boolean            black   blue
+Character          black   blue
+Constant           black   blue
+Float              black   blue
+Number             black   blue
+String             black   blue
+
+# purple blocks (specials)
+Debug              black   purple
+Delimiter          black   purple
+Special            black   purple
+SpecialChar        black   purple
+SpecialComment     black   purple
+SpecialKey         black   purple
+Tag                black   purple
+
+# pink blocks (names)
+Function           black   pink
+Identifier         black   pink
